@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me 61 - Muhammad Abrar Anggoro Putra</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      background: linear-gradient(270deg, #1f1c2c, #928dab, #1f1c2c);
+      background-size: 600% 600%;
+      animation: gradientBG 18s ease infinite;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 25px;
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background: rgba(0, 0, 0, 0.6);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+      animation: fadeIn 1s ease;
+    }
+
+    main {
+      flex: 1;
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 35px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+      animation: fadeInUp 1.2s ease;
+    }
+
+    h1, h2 {
+      color: #FFD700;
+      margin-bottom: 15px;
+      text-shadow: 0 0 10px rgba(255,215,0,0.6);
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    /* Layout Perkenalan */
+    .perkenalan {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 35px;
+    }
+
+    .biodata {
+      flex: 1;
+      font-size: 17px;
+    }
+
+    .biodata strong {
+      display: inline-block;
+      min-width: 120px;
+      color: #FFD700;
+    }
+
+    .foto {
+      flex: 0 0 240px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .foto img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #FFD700;
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .foto img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 45px rgba(255, 215, 0, 1);
+    }
+
+    /* Instagram Button */
+    .instagram {
+      margin-top: 25px;
+      text-align: center;
+    }
+
+    .instagram a {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .instagram a:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: rgba(0,0,0,0.75);
+      border-top: 1px solid rgba(255,255,255,0.2);
+      animation: fadeIn 1.5s ease;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsiveness */
+    @media (max-width: 768px) {
+      .perkenalan {
+        flex-direction: column;
+        text-align: center;
+      }
+      .biodata strong {
+        display: block;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    🌟 ABOUT ME 61 🌟
+  </header>
+
+  <main>
+    <h1>Perkenalan Diri</h1>
+    <div class="perkenalan">
+      <div class="biodata">
+        <p><strong>Nama:</strong> Muhammad Abrar Anggoro Putra</p>
+        <p><strong>NIM:</strong> M0405241001</p>
+        <p><strong>Proxy:</strong> Abelian</p>
+        <p><strong>Program Studi:</strong> S1 Artificial Intelligence</p>
+        <p><strong>Universitas:</strong> IPB University</p>
+      </div>
+      <div class="foto">
+        <img src="foto.jpg" alt="Foto Muhammad Abrar Anggoro Putra">
+      </div>
+    </div>
+
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah mahasiswa S1 Artificial Intelligence di IPB University. 
+      Memiliki ketertarikan pada teknologi, pemrograman, dan inovasi. 
+      Saat ini saya terus mengembangkan kemampuan dalam bidang AI, matematika, dan problem-solving, 
+      serta aktif mengikuti kegiatan kampus dan organisasi. 
+      Saya bercita-cita untuk berkarier di perusahaan besar dan menjadi pribadi yang inspiratif bagi banyak orang.
+    </p>
+
+    <div class="instagram">
+      <a href="https://www.instagram.com/_bey________________?igsh=MW5idmI3djJ1eDQxdw==" target="_blank">
+        ✨ Ikuti perjalanan saya lebih dekat di Instagram
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 | About Me 61 - Muhammad Abrar Anggoro Putra
+  </footer>
+</body>
+</html>
